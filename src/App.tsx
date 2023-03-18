@@ -1,10 +1,11 @@
-
+import { keycloak } from "./main"
 
 function App() {
-
   return (
     <>
-      Hello World!
+      React Keycloak
+
+      <button onClick={() => keycloak?.logout()}>Logout</button>
     </>
   )
 }
